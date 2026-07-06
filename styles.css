@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --primary: #0f766e;
+  --primary-dark: #115e59;
+  --accent: #f472b6;
+  --bg: #fdf2f8;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg), #ffe4f1);
+  color: var(--text);
+}
+
+.page {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 560px);
+  background: var(--card);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 15px 45px rgba(15, 23, 42, 0.16);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type="number"] {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.gender-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #f8fafc;
+}
+
+button {
+  margin-top: 8px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.2);
+}
+
+.result {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.result strong {
+  color: var(--primary);
+}
+
+.result .tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #78350f;
+  font-weight: 700;
+}
